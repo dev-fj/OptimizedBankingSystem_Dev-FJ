@@ -153,7 +153,7 @@ def novo_user(user):
         templete("ID must be a numerical value.")
         
 def filtro(cpf, user):
-    teste = [x for x in user if "ID" in x and x["ID"] == cpf]
+    teste = [x for x in user if x["ID"] == cpf]
     return teste[0] if teste else None
     
 def nova_conta(user, AGENCIA, lista_contas, n_contas):
